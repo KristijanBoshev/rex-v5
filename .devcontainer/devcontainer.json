@@ -3,8 +3,8 @@
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "remoteUser": "vscode",
   "workspaceFolder": "/workspaces/rex-v5",
-  "updateContentCommand": "sudo apt-get update && sudo apt-get install -y nodejs npm",
-  "postCreateCommand": "curl -fsSL https://pi.dev/install.sh | bash",
+  "updateContentCommand": "apt-get update && apt-get install -y nodejs npm",
+  "postCreateCommand": "curl -fsSL https://pi.dev/install.sh | bash && ln -sf ~/.pi/agent/bin/pi /usr/local/bin/pi",
   "customizations": {
     "vscode": {
       "settings": {
