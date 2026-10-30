@@ -4,7 +4,7 @@
   "remoteUser": "vscode",
   "workspaceFolder": "/workspaces/rex-v5",
   "updateContentCommand": "sudo apt-get update && sudo apt-get install -y nodejs npm",
-  "postCreateCommand": "curl -fsSL https://pi.dev/install.sh | bash && sudo ln -sf /home/vscode/.pi/agent/bin/pi /usr/local/bin/pi",
+  "postCreateCommand": "curl -fsSL https://pi.dev/install.sh | bash",
   "customizations": {
     "vscode": {
       "settings": {
