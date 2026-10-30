@@ -1,0 +1,16 @@
+{
+  "name": "rex-v5",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "remoteUser": "vscode",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/rex-v5,type=bind",
+  "workspaceFolder": "/workspaces/rex-v5",
+  "updateContentCommand": "sudo apt-get update && sudo apt-get install -y nodejs npm",
+  "postCreateCommand": "curl -fsSL https://pi.dev/install.sh | bash && echo 'export PATH=\"/home/vscode/.pi/agent/bin:$PATH\"' >> ~/.bashrc",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  }
+}
